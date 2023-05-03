@@ -7,7 +7,7 @@ services:
       dockerfile: ./${TYPE}/Dockerfile
       args:
         INFLUXDB_TAG: ${INFLUXDB_TAG}
-    image: "influxdb"
+    image: "influxdb:1.8"
     volumes:
       # Mount for influxdb data directory
       - ./influxdb/data:/var/lib/influxdb
